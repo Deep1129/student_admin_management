@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Profile</title>
+</head>
+<body>
+    <h1>Student Profile</h1>
+    <p><strong>Username:</strong> {{ student.user.username }}</p>
+    <p><strong>Enrollment Number:</strong> {{ student.enrollment_number }}</p>
+
+    <!-- Optional: Link to logout or other pages -->
+    <p><a href="{% url 'logout' %}">Logout</a></p>
+</body>
+</html>

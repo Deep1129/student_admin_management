@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Attendance</title>
+</head>
+<body>
+    <h1>Add Attendance</h1>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Save Attendance</button>
+    </form>
+    <p><a href="{% url 'attendance_list' %}">View All Attendance Records</a></p>
+</body>
+</html>
